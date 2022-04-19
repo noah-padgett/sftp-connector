@@ -1,8 +1,10 @@
+# import needed python libraries
 import ftplib
 import os
 
-# set directory of local machine
-localDir = "C:\\Users\\noahp\\Documents\\GitHub\\sftp-connector\\ftp"
+# set directory of local machine 
+#   Local directory needed for settings file
+localDir = "C:\\ftp-connector"
 os.chdir(localDir)
 
 # grab .txt file containing login information
@@ -21,9 +23,9 @@ def grabFile(filename):
     return;
     
 # run function
-grabFile(filename='lease.csv')
-grabFile(filename='NGL.csv')
-grabFile(filename='shiptran.csv')
+grabFile(filename=loginInfo[4])
+grabFile(filename=loginInfo[5])
+grabFile(filename=loginInfo[6])
   
   # close ftp connection
 ftp.quit()

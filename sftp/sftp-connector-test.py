@@ -12,18 +12,13 @@ with open("ftpLoginInformation.txt") as file:
     loginInfo = file.read().splitlines()
 
 # log into server
-cnopts = pysftp.CnOpts()
-cnopts.hostkeys = None
-
 sftp = pysftp.Connection(
   host=loginInfo[0], 
   username = loginInfo[1], 
-  password = loginInfo[2], 
-  cnopts=cnopts)
+  password = loginInfo[2])
 
 # Copy server to local
-
-sftp.get_r("/HOME/","C:\\")
+sftp.get_r("/","C:\\")
 
 # close SFTP connection
 sftp.close()

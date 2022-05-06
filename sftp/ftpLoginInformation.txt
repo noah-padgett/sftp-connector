@@ -1,6 +1,0 @@
-198.50.32.44
-SpiritMeter
-a9jeu6ix
-lease.csv
-NGL.csv
-shiptran.csv

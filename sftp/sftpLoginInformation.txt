@@ -1,0 +1,5 @@
+198.50.32.44
+SpiritMeter
+a9jeu6ix
+C:\\Users\\noahp\\Documents\\GitHub\\sftp-connector\\data
+5

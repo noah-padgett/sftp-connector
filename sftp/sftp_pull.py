@@ -2,15 +2,19 @@
 import pysftp
 import os
 import warnings
-
+import logging
 
 # set directory of local machine 
 #   Local directory needed for settings file
-localDir = "C:\\ftp-connector"
+localDir = "C:\\sftp-connector"
 os.chdir(localDir)
 
-# grab .txt file containing login information
-with open("ftpLoginInformation.txt") as file:
+# set up logging error file
+logging.basicConfig(filename="sftp_pull_log.txt",level=logging.DEBUG);
+logging.captureWarnings(True);
+
+# grab .txt file containing login information + files to transfer
+with open("sftpLoginInformation.txt") as file:
     loginInfo = file.read().splitlines()
 
 # log into server
@@ -31,6 +35,11 @@ sftp = pysftp.Connection(
 
 # Copy server to local
 sftp.get_r("/","C:\\")
+
+
+logging.info("\n")
+logging.info("File pull log end")
+logging.info("\n")
 
 # close SFTP connection
 sftp.close()

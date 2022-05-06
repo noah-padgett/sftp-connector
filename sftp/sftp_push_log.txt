@@ -1,0 +1,108 @@
+DEBUG:paramiko.transport:starting thread (client mode): 0x1e8c1820
+DEBUG:paramiko.transport:Local version/idstring: SSH-2.0-paramiko_2.10.3
+DEBUG:paramiko.transport:Remote version/idstring: SSH-2.0-9.99 sshlib
+INFO:paramiko.transport:Connected (version 2.0, client 9.99)
+DEBUG:paramiko.transport:=== Key exchange possibilities ===
+DEBUG:paramiko.transport:kex algos: diffie-hellman-group-exchange-sha256, diffie-hellman-group-exchange-sha1, diffie-hellman-group1-sha1, diffie-hellman-group14-sha1
+DEBUG:paramiko.transport:server key: ssh-rsa
+DEBUG:paramiko.transport:client encrypt: aes256-ctr, twofish256-ctr, twofish-ctr, aes128-ctr, twofish128-ctr, 3des-ctr, cast128-ctr, aes256-cbc, twofish256-cbc, twofish-cbc, aes128-cbc, twofish128-cbc, blowfish-cbc, 3des-cbc, arcfour, cast128-cbc
+DEBUG:paramiko.transport:server encrypt: aes256-ctr, twofish256-ctr, twofish-ctr, aes128-ctr, twofish128-ctr, 3des-ctr, cast128-ctr, aes256-cbc, twofish256-cbc, twofish-cbc, aes128-cbc, twofish128-cbc, blowfish-cbc, 3des-cbc, arcfour, cast128-cbc
+DEBUG:paramiko.transport:client mac: hmac-sha2-512, hmac-sha2-256, hmac-sha1
+DEBUG:paramiko.transport:server mac: hmac-sha2-512, hmac-sha2-256, hmac-sha1
+DEBUG:paramiko.transport:client compress: zlib, none
+DEBUG:paramiko.transport:server compress: zlib, none
+DEBUG:paramiko.transport:client lang: <none>
+DEBUG:paramiko.transport:server lang: <none>
+DEBUG:paramiko.transport:kex follows: False
+DEBUG:paramiko.transport:=== Key exchange agreements ===
+DEBUG:paramiko.transport:Kex: diffie-hellman-group-exchange-sha256
+DEBUG:paramiko.transport:HostKey: ssh-rsa
+DEBUG:paramiko.transport:Cipher: aes128-ctr
+DEBUG:paramiko.transport:MAC: hmac-sha2-256
+DEBUG:paramiko.transport:Compression: none
+DEBUG:paramiko.transport:=== End of kex handshake ===
+DEBUG:paramiko.transport:Got server p (2048 bits)
+DEBUG:paramiko.transport:kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+DEBUG:paramiko.transport:Switch to new keys ...
+DEBUG:paramiko.transport:Attempting password auth...
+DEBUG:paramiko.transport:userauth is OK
+INFO:paramiko.transport:Authentication (password) successful!
+DEBUG:paramiko.transport:[chan 0] Max packet in: 32768 bytes
+DEBUG:paramiko.transport:[chan 0] Max packet out: 35840 bytes
+DEBUG:paramiko.transport:Secsh channel 0 opened.
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+INFO:paramiko.transport.sftp:[chan 0] Opened sftp connection (server version 3)
+DEBUG:paramiko.transport.sftp:[chan 0] open(b'/Indausol', 'wb')
+DEBUG:paramiko.transport.sftp:[chan 0] open(b'Indausol/', 'wb')
+DEBUG:paramiko.transport.sftp:[chan 0] open(b'Indausol/', 'wb') -> 00000000
+DEBUG:paramiko.transport.sftp:[chan 0] close(00000000)
+DEBUG:paramiko.transport.sftp:[chan 0] stat(b'Indausol/')
+DEBUG:paramiko.transport.sftp:[chan 0] open(b'/Indausol/', 'wb')
+DEBUG:paramiko.transport.sftp:[chan 0] open(b'/Indausol', 'wb')
+DEBUG:paramiko.transport.sftp:[chan 0] open(b'/Indausol/', 'wb')
+DEBUG:paramiko.transport.sftp:[chan 0] open(b'Home/spiritmeter/Indausol/', 'wb')
+DEBUG:paramiko.transport.sftp:[chan 0] open(b'Home/spiritmeter/Indausol', 'wb')
+DEBUG:paramiko.transport.sftp:[chan 0] open(b'/Home/spiritmeter/Indausol', 'wb')
+DEBUG:paramiko.transport.sftp:[chan 0] open(b'/Home/spiritmeter/Indausol', 'wb') -> 00000000
+DEBUG:paramiko.transport.sftp:[chan 0] close(00000000)
+DEBUG:paramiko.transport.sftp:[chan 0] stat(b'/Home/spiritmeter/Indausol')
+DEBUG:paramiko.transport.sftp:[chan 0] open(b'/Home/spiritmeter/Indausol/test_upload.txt', 'wb')
+DEBUG:paramiko.transport.sftp:[chan 0] open(b'/Home/spiritmeter/Indausol/test_upload.txt', 'wb') -> 00000000
+DEBUG:paramiko.transport.sftp:[chan 0] close(00000000)
+DEBUG:paramiko.transport.sftp:[chan 0] stat(b'/Home/spiritmeter/Indausol/test_upload.txt')
+DEBUG:paramiko.transport.sftp:[chan 0] open(b'/Indausol/test_upload.txt', 'wb')
+ERROR:paramiko.transport:Socket exception: An existing connection was forcibly closed by the remote host (10054)
+DEBUG:paramiko.transport:starting thread (client mode): 0x1e024790
+DEBUG:paramiko.transport:Local version/idstring: SSH-2.0-paramiko_2.10.3
+DEBUG:paramiko.transport:Remote version/idstring: SSH-2.0-9.99 sshlib
+INFO:paramiko.transport:Connected (version 2.0, client 9.99)
+DEBUG:paramiko.transport:=== Key exchange possibilities ===
+DEBUG:paramiko.transport:kex algos: diffie-hellman-group-exchange-sha256, diffie-hellman-group-exchange-sha1, diffie-hellman-group1-sha1, diffie-hellman-group14-sha1
+DEBUG:paramiko.transport:server key: ssh-rsa
+DEBUG:paramiko.transport:client encrypt: aes256-ctr, twofish256-ctr, twofish-ctr, aes128-ctr, twofish128-ctr, 3des-ctr, cast128-ctr, aes256-cbc, twofish256-cbc, twofish-cbc, aes128-cbc, twofish128-cbc, blowfish-cbc, 3des-cbc, arcfour, cast128-cbc
+DEBUG:paramiko.transport:server encrypt: aes256-ctr, twofish256-ctr, twofish-ctr, aes128-ctr, twofish128-ctr, 3des-ctr, cast128-ctr, aes256-cbc, twofish256-cbc, twofish-cbc, aes128-cbc, twofish128-cbc, blowfish-cbc, 3des-cbc, arcfour, cast128-cbc
+DEBUG:paramiko.transport:client mac: hmac-sha2-512, hmac-sha2-256, hmac-sha1
+DEBUG:paramiko.transport:server mac: hmac-sha2-512, hmac-sha2-256, hmac-sha1
+DEBUG:paramiko.transport:client compress: zlib, none
+DEBUG:paramiko.transport:server compress: zlib, none
+DEBUG:paramiko.transport:client lang: <none>
+DEBUG:paramiko.transport:server lang: <none>
+DEBUG:paramiko.transport:kex follows: False
+DEBUG:paramiko.transport:=== Key exchange agreements ===
+DEBUG:paramiko.transport:Kex: diffie-hellman-group-exchange-sha256
+DEBUG:paramiko.transport:HostKey: ssh-rsa
+DEBUG:paramiko.transport:Cipher: aes128-ctr
+DEBUG:paramiko.transport:MAC: hmac-sha2-256
+DEBUG:paramiko.transport:Compression: none
+DEBUG:paramiko.transport:=== End of kex handshake ===
+DEBUG:paramiko.transport:Got server p (2048 bits)
+DEBUG:paramiko.transport:kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+DEBUG:paramiko.transport:Switch to new keys ...
+DEBUG:paramiko.transport:Attempting password auth...
+DEBUG:paramiko.transport:userauth is OK
+INFO:paramiko.transport:Authentication (password) successful!
+DEBUG:paramiko.transport:[chan 0] Max packet in: 32768 bytes
+DEBUG:paramiko.transport:[chan 0] Max packet out: 35840 bytes
+DEBUG:paramiko.transport:Secsh channel 0 opened.
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+INFO:paramiko.transport.sftp:[chan 0] Opened sftp connection (server version 3)
+DEBUG:paramiko.transport.sftp:[chan 0] open(b'/Home/spiritmeter/Indausol/lease.csv', 'wb')
+DEBUG:paramiko.transport.sftp:[chan 0] open(b'/Home/spiritmeter/Indausol/lease.csv', 'wb') -> 00000000
+DEBUG:paramiko.transport.sftp:[chan 0] close(00000000)
+DEBUG:paramiko.transport.sftp:[chan 0] stat(b'/Home/spiritmeter/Indausol/lease.csv')
+DEBUG:paramiko.transport.sftp:[chan 0] open(b'/Home/spiritmeter/Indausol/NGL.csv', 'wb')
+DEBUG:paramiko.transport.sftp:[chan 0] open(b'/Home/spiritmeter/Indausol/NGL.csv', 'wb') -> 00000000
+DEBUG:paramiko.transport.sftp:[chan 0] close(00000000)
+DEBUG:paramiko.transport.sftp:[chan 0] stat(b'/Home/spiritmeter/Indausol/NGL.csv')
+DEBUG:paramiko.transport.sftp:[chan 0] open(b'/Home/spiritmeter/Indausol/shiptran.csv', 'wb')
+DEBUG:paramiko.transport.sftp:[chan 0] open(b'/Home/spiritmeter/Indausol/shiptran.csv', 'wb') -> 00000000
+DEBUG:paramiko.transport.sftp:[chan 0] close(00000000)
+DEBUG:paramiko.transport.sftp:[chan 0] stat(b'/Home/spiritmeter/Indausol/shiptran.csv')
+INFO:root:
+
+INFO:root:File push log end
+INFO:root:
+
+INFO:paramiko.transport.sftp:[chan 0] sftp session closed.
+DEBUG:paramiko.transport:[chan 0] EOF sent (0)
+DEBUG:paramiko.transport:EOF in transport thread
